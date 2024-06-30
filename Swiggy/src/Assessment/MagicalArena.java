@@ -40,8 +40,27 @@ class Die {
 public class MagicalArena {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 
 	}
+	public static void takeTurn(Player attacker, Player defender, Die die) {
+        int attackRoll = die.roll();
+        int defendRoll = die.roll();
+
+        int attackDamage = attacker.attack * attackRoll;
+        int defendDamage = defender.strength * defendRoll;
+
+        int damageToDefender = attackDamage - defendDamage;
+        
+        // If the attack is greater than the defense then it will reduce the defenders health 
+        if (damageToDefender > 0) {
+            defender.health -= damageToDefender;
+            System.out.printf("%s attacks %s. Attack roll: %d, Defend roll: %d, Damage: %d. %s's health: %d%n",
+                    attacker.name, defender.name, attackRoll, defendRoll, damageToDefender, defender.name, defender.health);
+        } else {
+            System.out.printf("%s attacks %s. Attack roll: %d, Defend roll: %d. No damage dealt.%n",
+                    attacker.name, defender.name, attackRoll, defendRoll);
+        }
+    }
 
 }
