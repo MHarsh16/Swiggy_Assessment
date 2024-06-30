@@ -36,5 +36,50 @@ The game ends with a message declaring the winner.
 
 ## How to Use:
 
-*Run the program in a Java environment.[I used Eclipse IDE]
+### *Run the program in a Java environment.[I used Eclipse IDE]
+
+### Steps to import the Swiggy_Assessment-main Git ZIP file into Eclipse IDE and run the project :
+
+
+### 1.Extract the ZIP file:
+
+Download and locate the ZIP file on your computer.
+Right-click the file and select Extract All or use your preferred extraction tool.
+Choose a destination folder for the extracted files.
+Open Eclipse and Import the Project:
+
+### 2.Open Eclipse IDE.
+Go to File > Import
+
+### 3.Select Import Source:
+
+Select Existing Projects into Workspace and click Next.
+
+### 4.Select Root Directory:
+
+Click Browse and navigate to the folder where you extracted the ZIP file.
+Select the folder and ensure that Eclipse detects the project.
+Ensure the Copy projects into workspace option is checked if you want to copy the project to your workspace directory.
+
+### 5.Finish Importing:
+
+Ensure the project is selected.
+Click Finish.
+
+### 6.Run the Project:
+
+In the Package Explorer, locate your main class file.
+Right-click on the file, select Run As > Java Application.
+
+### 7.Provide input 
+The console will prompt you to enter the health, strength, and attack values for Player A and Player B.
+Enter the values as prompted.
+For example- 100, 20, 15 for player A & 120, 10, 10 for player B
+
+The game will proceed with the entered values and declare the winner.
+
+
+## Conclusion:
+
+By following the above steps, you will create a new Java project in Eclipse IDE and run the MagicalArena game where you can input player attributes and simulate the battle.
 
