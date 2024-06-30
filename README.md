@@ -68,7 +68,7 @@ Click Finish.
 
 ### 6.Run the Project:
 
-In the Package Explorer, locate your main class file.
+In the Package Explorer, locate the main class file [MagicalArena.java].
 Right-click on the file, select Run As > Java Application.
 
 ### 7.Provide input 
